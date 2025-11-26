@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alugaweb</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style type="text/tailwindcss">
+    
+
+    *{
+        font-family: "Inter", sans-serif;
+    }
+        @theme {
+            --color-laranja: #E04300;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header class=" border-b-2 border-black/20 flex justify-between p-4 lg:pl-13 lg:pr-13">
+        <div class="flex items-center gap-3">
+            <div class=" w-9 leading-9 bg-orange-700 rounded flex justify-center items-center">
+                <img src="icons/seta.png" class="block" alt="">
+            </div>
+            <span class="text-xl font-bold text-laranja">Aluga Web</span>
+        </div>
+
+        <div>
+            <a href="login.htm" target="_blank" class=" leading-10 px-4 flex items-center gap-3 bg-laranja/20 rounded-md text-laranja fill-laranja duration-150 hover:bg-laranja/50 hover:fill-white hover:text-white ">
+                <box-icon name="user"></box-icon>
+                Entrar
+            </a>
+        </div>
+
+       
+
+    </header>
+
+    <main>
+    <div class="mt-100px px-4 lg:flex lg:h-[calc(100vh_-_180px)] lg:mt-0 lg:*:flex-1 lg:px-0">
+        
+        <div class="lg:flex lg:flex-col lg:justify-center pl-4">
+            <h2 class="text-center text-3xl font-extrabold mb-4"> Onde você quer morar</h2>
+            <div class="flex justify-between items-center border-laranja border-3 rounded-[40px] ">
+                <box-icon class="fill-laranja w-9 h-9" name='map' type='solid' ></box-icon>
+                <input class="outline-none h-[75px] pl-4 flex-1" type="text" placeholder="EX: Fortaleza">
+
+                <div class="w-[63px] h-[63px] bg-laranja flex justify-center items-center fill-white rounded-full mr-[6px]">
+                    <box-icon name='search-alt-2'></box-icon>
+                </div>
+            </div>
+        </div>
+        <div class="lg:flex lg:items-end "> 
+            <img src="icons/girl.png" alt="" class="block m-auto w-[270px] mt-[50px] lg:w-auto lg:h-full pt-[50px]">
+        </div>
+    </div>
+    </main>
+
+    <footer></footer>
+    
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
